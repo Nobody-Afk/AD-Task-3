@@ -4,7 +4,6 @@
 
 <br />
 <div align="center">
-  <
 
   <h3 align="center">Simple Docker DB</h3>
 </div>
