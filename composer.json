@@ -1,0 +1,17 @@
+{
+    "name": "micjo/ad-ci4-template-project",
+    "autoload": {
+        "psr-4": {
+            "Micjo\\AdCi4TemplateProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nobody-Afk",
+            "email": "micjolaguesma@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
