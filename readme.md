@@ -15,11 +15,6 @@
 
 <br />
 
-
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AD-CI4-Template-Project)
-
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
-
 ---
 
 <br />
@@ -32,9 +27,6 @@
     <li>
       <a href="#overview">Overview</a>
       <ol>
-        <li>
-          <a href="#key-components">Key Components</a>
-        </li>
         <li>
           <a href="#technology">Technology</a>
         </li>
@@ -57,14 +49,6 @@
 <!-- The following are just sample -->
 
 Description of the project in details.
-
-### Key Components
-
-
-<!-- The following are just sample -->
-
-- Authentication & Authorization
-- CRUD Operations for Invetory System
 
 ### Technology
 
