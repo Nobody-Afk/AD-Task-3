@@ -15,7 +15,10 @@ services:
         - path: ./composer.lock
           action: rebuild
     depends_on:
-      - mongodb
+      mongodb:
+        condition: service_healthy
+      postgresql:
+        condition: service_healthy
 
   mongodb:
     image: mongo:latest
@@ -28,6 +31,12 @@ services:
       - "27112:27017"
     volumes:
       - username-mongodb:/data/db/mongodb
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
 
   postgresql:
     image: postgres:15
@@ -41,6 +50,12 @@ services:
       - "5113:5432"
     volumes:
       - username-postgresql:/data/db/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d postgredatabase"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
 
 volumes:
   username-mongodb:
